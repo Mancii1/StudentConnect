@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fade In Animation -->
+    <alpha xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="300"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+
+    <!-- Slide Up Animation -->
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="300">
+        <translate
+            android:fromYDelta="100%"
+            android:toYDelta="0%" />
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0" />
+    </set>
+
+    <!-- Slide Down Animation -->
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="300">
+        <translate
+            android:fromYDelta="-100%"
+            android:toYDelta="0%" />
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0" />
+    </set>
+
+    <!-- Scale Animation -->
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="300">
+        <scale
+            android:fromXScale="0.8"
+            android:fromYScale="0.8"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toXScale="1.0"
+            android:toYScale="1.0" />
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0" />
+    </set>
+
+    <!-- Button Press Animation -->
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="150">
+        <scale
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toXScale="0.95"
+            android:toYScale="0.95" />
+    </set>
+</resources> 

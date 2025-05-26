@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Student_recuitment_app"
+        tools:targetApi="31">
+        <activity
+            android:name=".Employer.EmployerApplicationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Application.ApplicationsListActivity"
+            android:exported="false"
+            android:label="My Applications" />
+        <activity
+            android:name=".job.JobDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.activity_admin_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".job.JobListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Employer.post_job"
+            android:exported="false" />
+        <activity
+            android:name=".Employer.ViewGraduatesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Graduate.Profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Employer.HomeEmployerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Graduate.Profile.HomegraduateDashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".authantication.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".authantication.loginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
